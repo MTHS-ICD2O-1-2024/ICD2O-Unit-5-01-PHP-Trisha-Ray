@@ -34,7 +34,7 @@
           <?php
           $randomNumber = rand(1, 6);
           //input
-          $userNumber = $_GET["number"];
+          $userNumber = $_GET["userNumber"];
           // process
           $userNumber = (int) $_GET["userNumber"];
           $randomNumber = rand(1, 6);
