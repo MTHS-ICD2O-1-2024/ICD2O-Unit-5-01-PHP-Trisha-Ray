@@ -36,7 +36,7 @@
         <div class="page-content-php">
           <form action="./answer.php" method="GET">
             <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" name="userNumber" />
+              <input class="mdl-textfield__input" type="number" name="userNumber" />
               <label class="mdl-textfield__label" for="userNumber">enter</label>
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>

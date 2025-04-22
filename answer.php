@@ -41,7 +41,7 @@
             echo "The number " . $userNumber . " was the correct number";
           }
           // process
-          if ($userNumber !== $randomNumber) {
+          if ($userNumber === $randomNumber) {
             // output
             echo "The correct number is " . $randomNumber;
           }
