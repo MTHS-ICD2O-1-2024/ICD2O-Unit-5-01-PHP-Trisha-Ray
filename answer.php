@@ -30,26 +30,26 @@
         <img src="./images/dice.gif" />
       </div>
       <div class="page-content-php">
-        <div id="check">
+        <div id="user-info">
           <?php
-          $randomNumber = rand(1, 6);
+          $randomNumber = random_int(1, 6);
           //input
           $userNumber = $_GET["userNumber"];
           // process
-          $userNumber = (int) $_GET["userNumber"];
-          $randomNumber = rand(1, 6);
-
           if ($userNumber === $randomNumber) {
-            echo "You have guessed the correct number!";
-          } else {
-            echo "You have guessed the wrong number!<br/>The Correct Number Was: " . $randomNumber;
+            // output
+            echo "The number " . $userNumber . " was the correct number";
+          }
+          // process
+          if ($userNumber !== $randomNumber) {
+            // output
+            echo "The correct number is " . $randomNumber;
           }
           ?>
+          <div class="page-content-answer">
+            <a href="./index.php">Return</a>
+          </div>
         </div>
-        <div class="page-content-answer">
-          <a href="./index.php">Return ...</a>
-        </div>
-      </div>
     </main>
   </div>
 </body>
