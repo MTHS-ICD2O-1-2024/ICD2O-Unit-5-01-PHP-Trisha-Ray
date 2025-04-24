@@ -42,8 +42,9 @@
           }
           // process
           if ($userNumber === $randomNumber) {
-            // output
-            echo "The correct number is " . $randomNumber;
+            echo "You have guessed the correct number!";
+          } else {
+            echo "You have guessed the wrong number!<br/>The Correct Number Was: " . $randomNumber;
           }
           ?>
           <div class="page-content-answer">
